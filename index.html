@@ -3,70 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio</title>
+    <title>Desta Rastra - Home</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  </head>
-  <!--STYLE CSS -->
-  <style>
-    body {
-      background-color: #a4d2b1;
-      color: #145625;
-    }
-    .navbar-nav a:hover {
-      text-decoration: underline;
-    }
-    .home-section {
-        padding: 45px 0;
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
       }
-  </style>
+
+      body {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: #ffffff;
+      }
+
+      .navbar {
+        background-color: transparent;
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: #ffffff !important;
+        font-weight: 500;
+      }
+
+      .nav-link:hover {
+        color: #ffd369 !important;
+      }
+
+      .hero-section {
+        padding: 100px 0;
+      }
+
+      .hero-title {
+        font-size: 3.5rem;
+        font-weight: 600;
+      }
+
+      .highlight {
+        color: #ffd369;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #dcdcdc;
+      }
+
+      .btn-custom {
+        background-color: #ffd369;
+        color: #ffffff;
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      .btn-custom:hover {
+        background-color: #ffffff;
+        box-shadow: 0 0 15px #ffd369;
+        color: #000;
+      }
+
+      .hero-img {
+        border-radius: 20px;
+        /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); */
+        max-height: 400px;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      footer {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
   <body>
-    <!-- Awal Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3c9857">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Portofolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">Robomen</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="portofolio.html">Portofolio</a>
-            <a class="nav-link" href="artikel.html">Artikel</a>
+            <a class="nav-link" href="portofolio.html">Sepatu</a>
+            <a class="nav-link" href="menu latihan.html">Menu Latihan</a>
             <a class="nav-link" href="kontak.html">Kontak</a>
-            <a class="nav-link" href="sertifikat.html">Sertifikat</a>
+            <a class="nav-link" href="achievement.html">Achievement</a>
+            <a class="nav-link" href="galery.html">gallery</a>
           </div>
         </div>
       </div>
     </nav>
-    <!-- Akhir Navbar -->
 
-    <!-- Home Section -->
-    <section class="home-section">
+    <!-- Hero Section -->
+    <section class="hero-section">
       <div class="container">
-        <div class="row g-3 align-items-center">
-          <div class="col-md-6">
-            <h1 class="mb-3">Welcome to My Portfolio</h1>
-            <h4 class="mb-4">Saya, Desta Rastra Putra Angga Raksa</h4>
-            <p class="mb-4 home-p">Mahasiswa Universitas Kristen Wira Wacana Sumba, Program Studi Teknik Informatika.</p>
-            <a href="about.html" class="btn" style="background-color: #3c9857; color: #a4d2b1;">Lanjut</a>
+        <div class="row align-items-center g-5">
+          <div class="col-md-6" data-aos="fade-up">
+            <h1 class="hero-title mb-3">
+              Hi, I'm <span class="highlight">Robomen</span>
+            </h1>
+            <p class="hero-subtitle">
+              Saya adalah seorang atlet futsal yang aktif berkompetisi di berbagai turnamen lokal. disiplin, kerja keras, kekompakan team, dan strategi permainan adalah prinsip yang saya pegang di setiap pertandingan.
+            </p>
+            <p>
+              Dengan pengalaman, semangat, fisik, dan mental yang saya miliki, saya terus berusaha dan berkembang demi mencapai performa terbaik saya di setiap pertandingan. Yuk kenalan lebih dekat!
+            </p>
+            <a href="about.html" class="btn btn-custom">Tentang Saya</a>
           </div>
-          <div class="col-md-6">
-            <img src="img/WhatsApp Image 2025-06-08 at 18.35.06.jpeg" alt="Developer Image" width="100%" height="400px" />
+          <div class="col-md-6" data-aos="zoom-in">
+            <img
+              src="img/WhatsApp_Image_2025-06-08_at_18.35.06-removebg-preview.png"
+              alt="Desta Rastra"
+              class="hero-img"
+            />
           </div>
         </div>
       </div>
     </section>
-    <!-- End Home Section -->
 
     <!-- Footer -->
-    <footer class="mt-4" style="width: 100%; background-color: rgb(129, 174, 143)">
-      <p class="p-4 mb-0 text-center">Robomen | Copyright &copy; 2025</p>
+    <footer>
+      <p>Robomen | Focus on your life goals</p>
     </footer>
 
-    <!-- JS Bootstrap  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Script JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
